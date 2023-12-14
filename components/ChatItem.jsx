@@ -25,11 +25,13 @@ const ChatItem = ({ title, chatId }) => {
     const unsub = onSnapshot(msgQuery, (querySnap) => {
       const upMsg = querySnap.docs.map((doc) => doc.data());
       setMessages(upMsg);
-      setLoading(false); // Set loading to false once messages are loaded
+      setLoading(false);
     });
 
     return unsub;
-  }, [chatId]); // Ensure that the effect is re-run when chatId changes
+  }, [chatId]);
+
+  const formattedTime = messages[messages.length - 1]?.timeStamp?.toDate().toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
 
   return (
     <View className="flex flex-row items-center space-x-4 my-2">
@@ -47,7 +49,7 @@ const ChatItem = ({ title, chatId }) => {
             <Text numberOfLines={2} className="text-primaryText flex-1">
               {messages[messages.length - 1]?.message}
             </Text>
-            <Text className="text-primary font-bold">27 min</Text>
+            <Text className="text-primary font-bold">{formattedTime}</Text>
           </View>
         )}
       </View>
