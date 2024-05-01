@@ -60,7 +60,7 @@ const SplashScreen = ({ navigation }) => {
   return (
     <View className="flex-1 items-center justify-center space-y-24">
       <Image
-        source={require("../assets/logo.jpg")}
+        source={require("../assets/logo.png")}
         className="w-24 h-24 rounded-full"
         resizeMode="contain"
       />

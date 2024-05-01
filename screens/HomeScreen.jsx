@@ -82,7 +82,7 @@ const HomeScreen = ({ navigation, route }) => {
         <View className="w-[60px] h-[60px]">
           <Image
             className="w-full h-full rounded-full"
-            source={require("../assets/logo.jpg")}
+            source={require("../assets/logo.png")}
           />
         </View>
         <View

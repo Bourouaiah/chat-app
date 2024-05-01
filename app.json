@@ -1,10 +1,10 @@
 {
   "expo": {
     "name": "chat-app",
-    "slug": "chat-app",
+    "slug": "chat-app-y30cyugymjgmpxwgfd5ae",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/logo.jpg",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
@@ -29,7 +29,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "bed44b9c-aa40-445f-ae62-fe3c3c42ae27"
+        "projectId": "d734ebd3-d8e6-4259-9dd7-1ec38b93e58d"
       }
     },
     "owner": "abdoubrh"

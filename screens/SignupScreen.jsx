@@ -81,7 +81,7 @@ const SignupScreen = ({ navigation }) => {
         <KeyboardAvoidingView className="flex-1 flex items-center h-full">
           <Image
             className="w-[50px] h-[50px] rounded-full mt-5"
-            source={require("../assets/logo.jpg")}
+            source={require("../assets/logo.png")}
           />
           <Text className="my-5 text-primaryText text-lg font-bold">
             Join with us!

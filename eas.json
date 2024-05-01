@@ -1,6 +1,6 @@
 {
   "cli": {
-    "version": ">= 5.9.1"
+    "version": ">= 7.8.5"
   },
   "build": {
     "preview": {
